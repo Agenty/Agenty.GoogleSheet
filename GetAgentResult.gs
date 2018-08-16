@@ -5,9 +5,9 @@
  * https://github.com/Agenty/Agenty.GoogleSheet
  */
  
-function GetAgentResult(agentId, apikey, fields, options) {
+function GetAgentResult(agentId, apikey, fields, parseOptions) {
   var url = "https://api.agenty.com/2.0/results/" + agentId + '?key=' + apikey;
-  return ImportJSONAdvanced(url, fields, options, includeXPath_, defaultTransform_);
+  return ImportJSONAdvanced(url, null, fields, parseOptions, includeXPath_, defaultTransform_);
 }
 
 /*====================================================================================================================================*
