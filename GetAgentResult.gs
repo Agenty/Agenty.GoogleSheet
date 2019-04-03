@@ -6,7 +6,7 @@
  */
  
 function GetAgentResult(agentId, apikey, fields, parseOptions) {
-  var url = "https://api.agenty.com/2.0/results/" + agentId + '?key=' + apikey;
+  var url = "https://api.agenty.com/v1/results/" + agentId + '?apikey=' + apikey;
   return ImportJSONAdvanced(url, null, fields, parseOptions, includeXPath_, defaultTransform_);
 }
 
